@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.json
+credentials.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build/output
+dist/
+build/
+
+# Large/local data
+*.zip
+*.rar
+*.7z
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node.js (if used)
+node_modules/
+
+# Java
+target/
+*.class
