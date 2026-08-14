@@ -1,8 +1,8 @@
-# Software-Defined Factory Controller Using Distributed RT Linux
+# AI-Based Smart Food Redistribution and Waste Reduction System
 
 ## Project Title
 
-**Software-Defined Factory Controller Using Distributed RT Linux**
+**AI-Based Smart Food Redistribution and Waste Reduction System**
 
 ## Team Members
 
@@ -19,27 +19,32 @@
 
 ## Abstract
 
-The project focuses on developing a **software-defined factory controller** for an automated conveyor-based sorting process using **Distributed Real-Time Linux (RT Linux)**. The system divides the factory control functions into separate software nodes for conveyor control, object detection, and sorting operations.
+The **AI-Based Smart Food Redistribution and Waste Reduction System** is designed to reduce food wastage by using artificial intelligence and data-driven decision-making to identify surplus food and facilitate its redistribution to people or organizations in need.
 
-Each node performs a specific control task and communicates with other nodes to coordinate the complete process. RT Linux is used to provide predictable and time-sensitive execution of control operations. The proposed system is designed as a **software-based simulation**, eliminating the need for physical hardware while demonstrating how distributed real-time control can be implemented for industrial automation.
+The system analyzes information such as food availability, quantity, expiry time, location, and demand to determine suitable redistribution opportunities. AI-based prediction and matching techniques can be used to prioritize food items based on urgency and connect available surplus food with nearby recipients or organizations.
+
+The proposed system aims to provide an efficient, technology-driven solution for reducing avoidable food waste while improving food redistribution and resource utilization.
 
 ## Objectives
 
-* Develop a software-defined controller for an automated factory sorting process.
-* Implement distributed control using separate RT Linux nodes.
-* Simulate conveyor, object detection, and sorting operations.
-* Enable communication between distributed control nodes.
-* Process sensor inputs and generate machine-control commands in real time.
-* Demonstrate predictable and coordinated operation of an industrial automation process.
+* Develop an AI-based system to identify and manage surplus food.
+* Predict food demand and potential food wastage using available data.
+* Prioritize food items based on quantity, expiry time, and urgency.
+* Match surplus food with suitable recipients or nearby organizations.
+* Reduce avoidable food waste through intelligent redistribution.
+* Provide a centralized platform for monitoring food availability and redistribution activities.
+* Improve the efficiency and transparency of the food redistribution process.
 
 ## Technologies Used
 
-* Linux / RT Linux
-* Python / C / C++ *(as applicable)*
-* Inter-process or network communication
+* Python
+* Artificial Intelligence / Machine Learning
+* Data Analysis and Visualization
+* Flask / FastAPI *(as applicable)*
+* HTML, CSS, JavaScript *(as applicable)*
+* Database
 * Git and GitHub
 * VS Code
-* Software-based factory simulation
 
 ## Repository Structure
 
@@ -57,10 +62,10 @@ Each node performs a specific control task and communicates with other nodes to 
 │   └── Dataset or documented data source
 │
 ├── results/
-│   └── Execution results and outputs
+│   └── Model results, graphs, and outputs
 │
 └── reports/
-    └── Review reports and project reports
+    └── Review reports and final project report
 ```
 
 ## Setup Instructions
@@ -74,57 +79,75 @@ cd <REPOSITORY_NAME>
 
 ### 2. Install Required Dependencies
 
-Install the required software and libraries according to the project implementation.
+Install the required Python libraries and other dependencies used by the project.
+
+```bash
+pip install -r requirements.txt
+```
 
 ### 3. Run the Project
 
-Navigate to the `src` directory and execute the appropriate controller programs.
+Navigate to the source directory:
 
 ```bash
 cd src
 ```
 
-Then run the required modules according to the project configuration.
+Run the main application according to the project implementation.
 
-## Execution
+```bash
+python app.py
+```
 
-The system consists of distributed software components representing:
+> The exact execution command will be updated as the project implementation is finalized.
 
-1. **Conveyor Node** – controls the movement of objects.
-2. **Detection Node** – detects and classifies incoming objects.
-3. **Sorting Node** – determines the appropriate sorting action.
-4. **Communication Layer** – enables coordination between the distributed nodes.
+## System Workflow
 
-The nodes communicate with each other to perform the complete automated sorting process.
+The proposed system follows these major steps:
+
+1. **Food Data Collection** – Collect information about surplus food, quantity, expiry time, location, and availability.
+2. **Data Processing** – Clean and preprocess the collected data for analysis.
+3. **AI-Based Prediction** – Analyze food availability and demand to identify potential wastage and redistribution requirements.
+4. **Food Prioritization** – Prioritize food based on factors such as expiry time, quantity, and urgency.
+5. **Smart Matching** – Match available surplus food with suitable recipients or organizations.
+6. **Redistribution** – Facilitate the redistribution of suitable food to reduce unnecessary wastage.
+7. **Monitoring and Results** – Track redistribution activities and evaluate the reduction in food waste.
 
 ## Current Phase Status
 
 **Current Phase:** Review 1
 
-**Status:** Project definition, problem statement, objectives, literature survey, research gap, innovation, feasibility analysis, and initial project planning completed.
+**Status:** Project title, problem statement, objectives, literature survey, research gap identification, innovation, feasibility analysis, and initial project planning completed.
 
 ### Upcoming Work
 
-* Implement the distributed RT Linux nodes.
-* Establish communication between nodes.
-* Develop the software-based conveyor and sorting simulation.
-* Test real-time communication and control.
-* Evaluate system performance.
-* Prepare subsequent review and final deliverables.
+* Collect and prepare the required dataset.
+* Perform data preprocessing and exploratory data analysis.
+* Develop the AI/ML prediction model.
+* Implement the food prioritization and matching mechanism.
+* Develop the application interface.
+* Integrate the AI model with the application.
+* Test and evaluate the system.
+* Prepare subsequent review and final project deliverables.
 
 ## Project Deliverables
 
 * Project documentation
 * Source code
-* Simulation results
+* Dataset / documented data source
+* AI/ML model
+* Model evaluation results
+* Application implementation
 * Review reports
 * Final project report
 
 ## GitHub Contribution Policy
 
-All team members contribute using their **individual GitHub accounts**. Progressive commits are maintained throughout the project, with meaningful commits made regularly.
+All team members will contribute using their **individual GitHub accounts** so that individual contributions can be verified.
 
-Phase deliverables will be tagged appropriately, such as:
+The project repository will maintain **progressive and meaningful commits** throughout the project. Phase deliverables will be properly tagged.
+
+Example tags:
 
 ```text
 review-1
@@ -134,8 +157,17 @@ final
 
 ## Important Note
 
-No passwords, API keys, credentials, licensed datasets, or confidential institutional data should be uploaded to this repository.
+The repository must not contain:
 
----
+* Passwords or credentials
+* API keys
+* Secret tokens
+* Licensed datasets that cannot be redistributed
+* Confidential institutional data
+* Other sensitive information
 
-**Academic Year:** 2026–2027
+Sensitive configuration values should be stored locally and excluded using `.gitignore`.
+
+## Academic Year
+
+**2026–2027**
