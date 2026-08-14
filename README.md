@@ -15,7 +15,7 @@
 
 ## Supervisor
 
-**Supervisor Name:** TBD
+**Supervisor Name:** Dr Archana Kalidindi
 
 ## Abstract
 
